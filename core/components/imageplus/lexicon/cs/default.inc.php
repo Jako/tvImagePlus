@@ -59,8 +59,8 @@ $_lang['imageplus.error.image_not_found.msg'] = 'Obrázek nebyl nalezen a nelze 
 
 /** System settings **/
 $_lang['area_imageplus'] = 'Image+';
-$_lang['setting_imageplus.debug'] = 'Enable Debug';
-$_lang['setting_imageplus.debug_desc'] = 'Load not combined/uglified javascript and not combined/minified css files.';
+$_lang['setting_imageplus.debug'] = 'Debug';
+$_lang['setting_imageplus.debug_desc'] = 'Log debug informations in MODX error log.';
 $_lang['setting_imageplus.target_width'] = $_lang['imageplus.targetwidth'];
 $_lang['setting_imageplus.target_width_desc'] = $_lang['imageplus.targetwidth_desc'];
 $_lang['setting_imageplus.target_height'] = $_lang['imageplus.targetheight'];
