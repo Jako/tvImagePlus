@@ -10,6 +10,10 @@ $_lang['imageplus.credits'] = 'Credits';
 /** Input options render **/
 $_lang['imageplus.section'] = 'Image+ Options';
 $_lang['imageplus.section_desc'] = 'The following options could be overridden by context/system settings. Please read the <a href="http://jako.github.io/ImagePlus/usage/">documentation</a> for the appropriate keys in the context/system settings.';
+$_lang['imageplus.selectConfig'] = 'Predefined target sizes/aspect ratios';
+$_lang['imageplus.selectConfig_desc'] = 'Select a predefined target size/aspect ratio. The definitions could be created in the system settings.';
+$_lang['imageplus.selectConfigForce'] = 'Forced predefined target sizes/aspect ratios';
+$_lang['imageplus.selectConfigForce_desc'] = 'Forced select a predefined crop size/aspect ratio. The definitions could be created in the system settings.';
 $_lang['imageplus.targetwidth'] = 'Ausgabebreite';
 $_lang['imageplus.targetwidth_desc'] = '(Optional, Integer) Gibt die Ausgabebreite des Bildes an. Das hochgeladene Bild muss mindestens diese Breite haben.';
 $_lang['imageplus.targetheight'] = 'Ausgabehöhe';
@@ -71,3 +75,10 @@ $_lang['setting_imageplus.allow_caption'] = $_lang['imageplus.allowCaption'];
 $_lang['setting_imageplus.allow_caption_desc'] = $_lang['imageplus.allowCaption_desc'];
 $_lang['setting_imageplus.allow_credits'] = $_lang['imageplus.allowCredits'];
 $_lang['setting_imageplus.allow_credits_desc'] = $_lang['imageplus.allowCredits_desc'];
+$_lang['setting_imageplus.select_config'] = 'Predefined crop sizes/aspect ratios';
+$_lang['setting_imageplus.select_config_desc'] = 'Create predefined crop size/aspect ratios that are selectable in the template variable options.';
+$_lang['setting_imageplus.force_config'] = 'Force predefined crop sizes/aspect ratios';
+$_lang['setting_imageplus.force_config_desc'] = 'Force the usage of predefined crop size/aspect ratios.';
+
+/** System settings grid */
+$_lang['setting_imageplus.configname'] = 'Name';
