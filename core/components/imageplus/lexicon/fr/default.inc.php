@@ -14,7 +14,7 @@ $_lang['imageplus.selectConfig'] = 'Predefined target sizes/aspect ratios';
 $_lang['imageplus.selectConfig_desc'] = 'Select a predefined target size/aspect ratio. The definitions could be created in the system settings.';
 $_lang['imageplus.selectConfigForce'] = 'Forced predefined target sizes/aspect ratios';
 $_lang['imageplus.selectConfigForce_desc'] = 'Forced select a predefined crop size/aspect ratio. The definitions could be created in the system settings.';
-$_lang['imageplus.targetwidth'] = 'Largeur  (minimale) de la cible';
+$_lang['imageplus.targetwidth'] = 'Largeur (minimale) de la cible';
 $_lang['imageplus.targetwidth_desc'] = '(Facultatif, entier) La largeur ciblée de l\'image en sortie. L\'image téléchargée devrait avoir cette largeur minimale.';
 $_lang['imageplus.targetheight'] = 'Hauteur  (minimale) de la cible';
 $_lang['imageplus.targetheight_desc'] = '(Facultatif, entier) La hauteur ciblée de l\'image en sortie. L\'image téléchargée devrait avoir cette hauteur minimale.';
@@ -59,7 +59,7 @@ $_lang['imageplus.error.image_not_found.msg'] = 'L\'image est introuvable et ne 
 
 /** System settings **/
 $_lang['area_imageplus'] = 'Image+';
-$_lang['setting_imageplus.debug'] = 'Debug';
+$_lang['setting_imageplus.debug'] = 'Débuggage';
 $_lang['setting_imageplus.debug_desc'] = 'Log debug informations in MODX error log.';
 $_lang['setting_imageplus.target_width'] = $_lang['imageplus.targetwidth'];
 $_lang['setting_imageplus.target_width_desc'] = $_lang['imageplus.targetwidth_desc'];
