@@ -76,9 +76,9 @@ $_lang['setting_imageplus.allow_caption_desc'] = $_lang['imageplus.allowCaption_
 $_lang['setting_imageplus.allow_credits'] = $_lang['imageplus.allowCredits'];
 $_lang['setting_imageplus.allow_credits_desc'] = $_lang['imageplus.allowCredits_desc'];
 $_lang['setting_imageplus.select_config'] = 'Vordefinierte Ausgabegrößen/Ausgabe-Seitenverhältnisse';
-$_lang['setting_imageplus.select_config_desc'] = 'Wählen Sie eine vordefinierte Ausgabegröße/Seitenverhältnis.';
+$_lang['setting_imageplus.select_config_desc'] = 'Erstellen Sie vordefinierte Ausgabegrößen/Ausgabe-Seitenverhältnisse, welche in den Template Variable Optionen wählbar sind.';
 $_lang['setting_imageplus.force_config'] = 'Erzwungene vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
-$_lang['setting_imageplus.force_config_desc'] = 'Wählen Sie eine erzwungene vordefinierte Ausgabegröße/Seitenverhältnis.';
+$_lang['setting_imageplus.force_config_desc'] = 'Erzwingen Sie die Verwendung von vordefinierten Ausgabegrößen/Ausgabe-Seitenverhältnissen.';
 
 /** System settings grid */
 $_lang['setting_imageplus.configname'] = 'Name';
