@@ -59,8 +59,8 @@ $_lang['imageplus.error.image_not_found.msg'] = 'Das Bild wurde nicht gefunden u
 
 /** System settings **/
 $_lang['area_imageplus'] = 'Image+';
-$_lang['setting_imageplus.debug'] = 'Debug';
-$_lang['setting_imageplus.debug_desc'] = 'Debug-Informationen im MODX Fehlerprotokoll ausgeben.';
+$_lang['setting_imageplus.debug'] = 'Debug Modus aktivieren';
+$_lang['setting_imageplus.debug_desc'] = 'Lade nicht kombinierte und nicht komprimierte Javascript und CSS Dateien.';
 $_lang['setting_imageplus.target_width'] = $_lang['imageplus.targetwidth'];
 $_lang['setting_imageplus.target_width_desc'] = $_lang['imageplus.targetwidth_desc'];
 $_lang['setting_imageplus.target_height'] = $_lang['imageplus.targetheight'];
