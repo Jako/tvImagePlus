@@ -4,16 +4,16 @@ $_lang['imageplus'] = 'Image+';
 $_lang['imageplus.editor_title'] = 'Image+ Editor';
 $_lang['imageplus.edit_image'] = 'Bild bearbeiten';
 $_lang['imageplus.alt_text'] = 'Alt-Text';
-$_lang['imageplus.caption'] = 'Caption';
-$_lang['imageplus.credits'] = 'Credits';
+$_lang['imageplus.caption'] = 'Titel';
+$_lang['imageplus.credits'] = 'Bildnachweis';
 
 /** Input options render **/
-$_lang['imageplus.section'] = 'Image+ Options';
-$_lang['imageplus.section_desc'] = 'The following options could be overridden by context/system settings. Please read the <a href="http://jako.github.io/ImagePlus/usage/">documentation</a> for the appropriate keys in the context/system settings.';
-$_lang['imageplus.selectConfig'] = 'Predefined target sizes/aspect ratios';
-$_lang['imageplus.selectConfig_desc'] = 'Select a predefined target size/aspect ratio. The definitions could be created in the system settings.';
-$_lang['imageplus.selectConfigForce'] = 'Forced predefined target sizes/aspect ratios';
-$_lang['imageplus.selectConfigForce_desc'] = 'Forced select a predefined crop size/aspect ratio. The definitions could be created in the system settings.';
+$_lang['imageplus.section'] = 'Image+ Optionen';
+$_lang['imageplus.section_desc'] = 'Die folgenden Optionen können per System-/Kontexteinstellungen überschrieben werden. Bitte lesen Sie die <a href="http://jako.github.io/ImagePlus/usage/">Dokumentation</a> für die entsprechenden Einträge in den System-/Kontexteinstellungen.';
+$_lang['imageplus.selectConfig'] = 'Vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
+$_lang['imageplus.selectConfig_desc'] = 'Wählen Sie eine vordefinierte Ausgabegröße/ein Seitenverhältnis. Die Vorgaben können in den Systemeinstellungen eingestellt werden.';
+$_lang['imageplus.selectConfigForce'] = 'Erzwungene vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
+$_lang['imageplus.selectConfigForce_desc'] = 'Wählen Sie eine erzwungene vordefinierte Ausgabegröße/ein Seitenverhältnis. Die Vorgaben können in den Systemeinstellungen eingestellt werden.';
 $_lang['imageplus.targetwidth'] = 'Ausgabebreite';
 $_lang['imageplus.targetwidth_desc'] = '(Optional, Integer) Gibt die Ausgabebreite des Bildes an. Das hochgeladene Bild muss mindestens diese Breite haben.';
 $_lang['imageplus.targetheight'] = 'Ausgabehöhe';
@@ -24,10 +24,10 @@ $_lang['imageplus.thumbnailWidth'] = 'Breite des Thumbnails';
 $_lang['imageplus.thumbnailWidth_desc'] = '(Optional, Integer) Breite des Thumbnails im Template Variablen Bereich.';
 $_lang['imageplus.allowAltTag'] = 'Alternatives Textfeld anzeigen';
 $_lang['imageplus.allowAltTag_desc'] = 'Ermöglicht die Eingabe eines Alt oder Title-Attributes für das Bild.';
-$_lang['imageplus.allowCaption'] = 'Show Caption Field';
-$_lang['imageplus.allowCaption_desc'] = 'Allow user to enter a caption for the image.';
-$_lang['imageplus.allowCredits'] = 'Show Credits Field';
-$_lang['imageplus.allowCredits_desc'] = 'Allow user to enter a credit for the image.';
+$_lang['imageplus.allowCaption'] = 'Titel Feld anzeigen';
+$_lang['imageplus.allowCaption_desc'] = 'Ermöglicht die Eingabe eines Titels für das Bild.';
+$_lang['imageplus.allowCredits'] = 'Bildnachweis Feld anzeigen';
+$_lang['imageplus.allowCredits_desc'] = 'Ermöglicht die Eingabe eines Bildnachweises für das Bild.';
 
 /** Output options render **/
 $_lang['imageplus.phpThumbParams'] = 'Zursätzliche phpThumb Parameter';
@@ -75,10 +75,10 @@ $_lang['setting_imageplus.allow_caption'] = $_lang['imageplus.allowCaption'];
 $_lang['setting_imageplus.allow_caption_desc'] = $_lang['imageplus.allowCaption_desc'];
 $_lang['setting_imageplus.allow_credits'] = $_lang['imageplus.allowCredits'];
 $_lang['setting_imageplus.allow_credits_desc'] = $_lang['imageplus.allowCredits_desc'];
-$_lang['setting_imageplus.select_config'] = 'Predefined crop sizes/aspect ratios';
-$_lang['setting_imageplus.select_config_desc'] = 'Create predefined crop size/aspect ratios that are selectable in the template variable options.';
-$_lang['setting_imageplus.force_config'] = 'Force predefined crop sizes/aspect ratios';
-$_lang['setting_imageplus.force_config_desc'] = 'Force the usage of predefined crop size/aspect ratios.';
+$_lang['setting_imageplus.select_config'] = 'Vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
+$_lang['setting_imageplus.select_config_desc'] = 'Wählen Sie eine vordefinierte Ausgabegröße/ein Seitenverhältnis.';
+$_lang['setting_imageplus.force_config'] = 'Erzwungene vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
+$_lang['setting_imageplus.force_config_desc'] = 'Wählen Sie eine erzwungene vordefinierte Ausgabegröße/ein Seitenverhältnis.';
 
 /** System settings grid */
 $_lang['setting_imageplus.configname'] = 'Name';
