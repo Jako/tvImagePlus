@@ -4,8 +4,12 @@ $_lang['imageplus'] = 'Image+';
 $_lang['imageplus.editor_title'] = 'Éditeur Image+';
 $_lang['imageplus.edit_image'] = 'Éditer l\'image';
 $_lang['imageplus.alt_text'] = 'Texte de l\'attribut Alt';
+$_lang['imageplus.caption'] = 'Caption';
+$_lang['imageplus.credits'] = 'Credits';
 
 /** Input options render **/
+$_lang['imageplus.section'] = 'Image+ Options';
+$_lang['imageplus.section_desc'] = 'The following options could be overridden by context/system settings. Please read the <a href="http://jako.github.io/ImagePlus/usage/">documentation</a> for the appropriate keys in the context/system settings.';
 $_lang['imageplus.targetwidth'] = 'Largeur  (minimale) de la cible';
 $_lang['imageplus.targetwidth_desc'] = '(Facultatif, entier) La largeur ciblée de l\'image en sortie. L\'image téléchargée devrait avoir cette largeur minimale.';
 $_lang['imageplus.targetheight'] = 'Hauteur  (minimale) de la cible';
@@ -16,6 +20,10 @@ $_lang['imageplus.thumbnailWidth'] = 'Largeur miniature';
 $_lang['imageplus.thumbnailWidth_desc'] = '(Optionnel, entier) Largeur de la miniature dans le panneau de variable de modèle (TV).';
 $_lang['imageplus.allowAltTag'] = 'Tag Alt';
 $_lang['imageplus.allowAltTag_desc'] = 'Autorise l\'utilisateur à entrer un titre/tag alt pour l\'image';
+$_lang['imageplus.allowCaption'] = 'Show Caption Field';
+$_lang['imageplus.allowCaption_desc'] = 'Allow user to enter a caption for the image.';
+$_lang['imageplus.allowCredits'] = 'Show Credits Field';
+$_lang['imageplus.allowCredits_desc'] = 'Allow user to enter a credit for the image.';
 
 /** Output options render **/
 $_lang['imageplus.phpThumbParams'] = 'Paramètres phpThumb additionnels';
@@ -45,5 +53,21 @@ $_lang['imageplus.error.image_too_small.msg'] = 'L\'image sélectionnée est tro
 $_lang['imageplus.error.image_not_found.title'] = 'Image non trouvée';
 $_lang['imageplus.error.image_not_found.msg'] = 'L\'image est introuvable et ne peut être recadrée. Veuillez sélectionner une image différente.';
 
+/** System settings **/
+$_lang['area_imageplus'] = 'Image+';
 $_lang['setting_imageplus.debug'] = 'Debug';
 $_lang['setting_imageplus.debug_desc'] = 'Log debug informations in MODX error log.';
+$_lang['setting_imageplus.target_width'] = $_lang['imageplus.targetwidth'];
+$_lang['setting_imageplus.target_width_desc'] = $_lang['imageplus.targetwidth_desc'];
+$_lang['setting_imageplus.target_height'] = $_lang['imageplus.targetheight'];
+$_lang['setting_imageplus.target_height_desc'] = $_lang['imageplus.targetheight_desc'];
+$_lang['setting_imageplus.target_ratio'] = $_lang['imageplus.targetRatio'];
+$_lang['setting_imageplus.target_ratio_desc'] = $_lang['imageplus.targetRatio_desc'];
+$_lang['setting_imageplus.thumbnail_width'] = $_lang['imageplus.thumbnailWidth'];
+$_lang['setting_imageplus.thumbnail_width_desc'] = $_lang['imageplus.thumbnailWidth_desc'];
+$_lang['setting_imageplus.allow_alt_tag'] = $_lang['imageplus.allowAltTag'];
+$_lang['setting_imageplus.allow_alt_tag_desc'] = $_lang['imageplus.allowAltTag_desc'];
+$_lang['setting_imageplus.allow_caption'] = $_lang['imageplus.allowCaption'];
+$_lang['setting_imageplus.allow_caption_desc'] = $_lang['imageplus.allowCaption_desc'];
+$_lang['setting_imageplus.allow_credits'] = $_lang['imageplus.allowCredits'];
+$_lang['setting_imageplus.allow_credits_desc'] = $_lang['imageplus.allowCredits_desc'];
