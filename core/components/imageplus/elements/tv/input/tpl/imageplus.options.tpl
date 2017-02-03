@@ -33,7 +33,7 @@
             id: 'inopt_selectConfig{/literal}{$tv}{literal}',
             tvId: '{/literal}{$tv}{literal}',
             labelAlign: 'left',
-            data: {/literal}{$selectconfig}{literal},
+            data: {/literal}{$selectconfig|default:'{}'}{literal},
             hidden: {/literal}{$hide}{literal},
             anchor: '100%'
         }, {
