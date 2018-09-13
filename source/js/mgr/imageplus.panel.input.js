@@ -419,14 +419,19 @@ Ext.extend(ImagePlus.panel.input, MODx.Panel, {
     },
     // Get hidden field value
     getValue: function (field) {
-        this.image = Ext.util.JSON.decode(Ext.get(field).getValue());
+        var elem = Ext.get(field);
+        var src = '';
+        if(elem) {
+            src = elem.getValue();
+            this.image = Ext.util.JSON.decode(src);
+        }
         if (!this.image) {
             this.image = {
                 'sourceImg': {
                     'height': 0,
                     'width': 0,
                     'source': this.options.mediaSource,
-                    'src': Ext.get(field).getValue()
+                    'src': src
                 },
                 'crop': {
                     'x': 0,
