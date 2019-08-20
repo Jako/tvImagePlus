@@ -8,7 +8,7 @@ $_lang['imageplus.credits'] = 'Crediti';
 
 /** Input options render **/
 $_lang['imageplus.section'] = 'Opzioni Image+';
-$_lang['imageplus.section_desc'] = 'Le seguenti opzioni possono essere sovrascritte dalle impostazioni di sistema/contesto. Si prega di leggere la <a target="_blank" href="http://jako.github.io/ImagePlus/usage/">documentazione</a> per conoscere le chiavi da utilizzare nelle impostazioni di sistema/contesto.';
+$_lang['imageplus.section_desc'] = 'The following options could be overridden by context/system settings. Please read the <a target="_blank" href="https://jako.github.io/ImagePlus/usage/">documentation</a> for the appropriate keys in the context/system settings.';
 $_lang['imageplus.selectConfig'] = 'Destinazione con dimensioni/proporzioni predefinite';
 $_lang['imageplus.selectConfig_desc'] = 'Seleziona un\'impostazione di dimensioni/proporzioni predefinita. Le definizioni possono essere create nelle impostazioni del sistema.';
 $_lang['imageplus.selectConfigForce'] = 'Forza destinazione con dimensioni/proporzioni predefinite';
