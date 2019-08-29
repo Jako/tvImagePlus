@@ -8,7 +8,7 @@ $_lang['imageplus.credits'] = 'Bildnachweis';
 
 /** Input options render **/
 $_lang['imageplus.section'] = 'Image+ Optionen';
-$_lang['imageplus.section_desc'] = 'The following options could be overridden by context/system settings. Please read the <a target="_blank" href="https://jako.github.io/ImagePlus/usage/">documentation</a> for the appropriate keys in the context/system settings.';
+$_lang['imageplus.section_desc'] = 'Die folgenden Optionen können per System-/Kontexteinstellungen überschrieben werden. Bitte lesen Sie die <a target="_blank" href="https://jako.github.io/ImagePlus/usage/">Dokumentation</a> für die entsprechenden Einträge in den System-/Kontexteinstellungen.';
 $_lang['imageplus.selectConfig'] = 'Vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
 $_lang['imageplus.selectConfig_desc'] = 'Wählen Sie eine vordefinierte Ausgabegröße/ein Seitenverhältnis. Die Vorgaben können in den Systemeinstellungen eingestellt werden.';
 $_lang['imageplus.selectConfigForce'] = 'Erzwungene vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
