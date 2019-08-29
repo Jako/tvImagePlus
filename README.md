@@ -22,11 +22,11 @@ Install via package manager, create a TV and change the input & output type to '
 
 ## Documentation
 
-For more information please read the [documentation](http://jako.github.io/ImagePlus/).
+For more information please read the [documentation](https://jako.github.io/ImagePlus/).
 
 ## Dependencies
 
-MODX Cropping Engine i.e. [pthumb](http://modx.com/extras/package/pthumb)
+MODX Cropping Engine i.e. [pthumb](https://modx.com/extras/package/pthumb)
 
 ## Translations
 

@@ -1,7 +1,7 @@
 {
   "name": "ImagePlus",
   "lowCaseName": "imageplus",
-  "description": "Advanced Image template variable input type",
+  "description": "Advanced Image Template Variable",
   "author": "Alan Pich, Thomas Jakobi",
   "version": "2.8.0",
   "package": {
@@ -122,13 +122,20 @@
       }
     ]
   },
+  "dependencies": [
+    {
+      "name": "php",
+      "version": ">=5.6"
+    },
+    {
+      "name": "modx",
+      "version": ">=2.6"
+    }
+  ],
   "build": {
     "readme": "docs/readme.md",
     "license": "docs/license.md",
     "changelog": "docs/changelog.md",
-    "options": {
-      "modx_version": "2.6"
-    },
     "setupOptions": {
       "source": "setup.options.php"
     },

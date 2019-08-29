@@ -34,4 +34,4 @@ https://github.com/Jako/ImagePlus
 
 ## Dependencies
 
-MODX Cropping Engine i.e. pthumb <http://modx.com/extras/package/pthumb>
+MODX Cropping Engine i.e. pthumb <https://modx.com/extras/package/pthumb>

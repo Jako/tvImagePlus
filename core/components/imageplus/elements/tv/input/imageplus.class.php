@@ -18,6 +18,7 @@ class ImagePlusInputRender extends modTemplateVarInputRender
 {
     /**
      * Return the template path to load
+     *
      * @return string
      */
     public function getTemplate()
@@ -27,6 +28,8 @@ class ImagePlusInputRender extends modTemplateVarInputRender
     }
 
     /**
+     * Get lexicon topics
+     *
      * @return array
      */
     public function getLexiconTopics()
@@ -35,6 +38,8 @@ class ImagePlusInputRender extends modTemplateVarInputRender
     }
 
     /**
+     * Process Input Render
+     *
      * @param string $value
      * @param array $params
      * @return void|mixed

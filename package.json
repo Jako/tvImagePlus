@@ -17,14 +17,14 @@
     "node-sass": "^4.12.0",
     "pixrem": "^5.0.0"
   },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
   "browserslist": [
     "last 2 version",
     "> 1%",
     "maintained node versions",
     "not dead",
     "ie >= 8"
-  ],
-  "dependencies": {
-    "jquery": "^3.4.1"
-  }
+  ]
 }
