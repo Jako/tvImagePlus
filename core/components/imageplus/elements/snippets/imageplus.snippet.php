@@ -24,7 +24,14 @@ $imageplus = $modx->getService('imageplus', 'ImagePlus', $corePath . 'model/imag
 ));
 
 $tvname = $modx->getOption('tvname', $scriptProperties, '', true);
-$docid = $modx->getOption('docid', $scriptProperties, $modx->resource->get('id'), true);
+$docid = $modx->getOption('docid', $scriptProperties, '', true);
+if ( '' === $docid ) {
+    if ( ! isset( $modx->resource ) ) {
+        $modx->log(xPDO::LOG_LEVEL_ERROR, 'Unable to determine the ID of the current resource.', '', 'Image+');
+        return 'Unable to determine the ID of the current resource.';
+    }
+    $docid = $modx->resource->get('id');
+}
 $type = $modx->getOption('type', $scriptProperties, '', true);
 $options = $modx->getOption('options', $scriptProperties, '', true);
 $tpl = $modx->getOption('tpl', $scriptProperties, 'ImagePlus.image', true);
