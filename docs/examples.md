@@ -1,18 +1,14 @@
-**Image+* could be used for several purposes. On this page you find some
-*examples how to use it:
+**Image+* could be used for several purposes. On this page you find some *examples how to use it:
 
-### Collections
+## Collections
 
-You could show the *Image+* thumbnail in a Collections grid column by setting
-the column renderer to *ImagePlus.MIGX_Renderer*.
+You could show the *Image+* thumbnail in a Collections grid column by setting the column renderer to *ImagePlus.MIGX_Renderer*.
 
-### MIGX
+## MIGX
 
-If you want to use *Image+* in MIGX you could define all *Image+* TV properties
-with a JSON string in the *Configs* textarea in the MIGX formtabs field
-configuration. The following properties are possible:
+If you want to use *Image+* in MIGX you could define all *Image+* TV properties with a JSON string in the *Configs* textarea in the MIGX formtabs field configuration. The following properties are possible:
 
-```
+``` json
 {
 "targetWidth":"",
 "targetHeight":"",
@@ -26,52 +22,44 @@ configuration. The following properties are possible:
 
 And you also have to change the *Input TV Type* to `imageplus`.
 
-You could show the thumbnail in the grid column by setting the renderer to
-*ImagePlus.MIGX_Renderer*. In prior MIGX versions you have to raw edit a MIGX
-configuration for that.
+You could show the thumbnail in the grid column by setting the renderer to *ImagePlus.MIGX_Renderer*. In prior MIGX versions you have to raw edit a MIGX configuration for that.
 
-To use that *Image+*-MIGX-Field in the Frontend, call the *ImagePlus Snippet*
-with just the value-parameter being the name of this MIGX-Field:
+To use that *Image+*-MIGX-Field in the Frontend, call the *ImagePlus Snippet* with just the value-parameter being the name of this MIGX-Field:
 
-```
+``` php
 [[ImagePlus? 
   &value=`[[+migxImagePlusField]]`
 ]]
 ```
 
-This will get you the prepared URL for the cropped image, instead of the raw
-JSON-Object.
+This will get you the prepared URL for the cropped image, instead of the raw JSON-Object.
 
-### getResources/pdoResources
+## getResources/pdoResources
 
-In order for the TV to be parsed with the *getResources/pdoResources Snippet*,
-make sure you add the following lines to your *getResources/pdoResources
-Snippet* call:
+In order for the TV to be parsed with the *getResources/pdoResources Snippet*, make sure you add the following lines to your *getResources/pdoResources Snippet* call:
 
-```
+``` php
 &includeTVs=`name_of_your_tv`
 &processTVs=`name_of_your_tv`
 ```
 
-In the template Chunk of the *getResources/pdoResources Snippet* call you
-could use the placeholder `[[+tv.name_of_your_tv]]` if the Output Type of the TV
-is set to `Image+`. Without additional changes, the placeholder contains the url
-to the cropped image.
+In the template Chunk of the *getResources/pdoResources Snippet* call you could use the placeholder `[[+tv.name_of_your_tv]]` if the Output Type of the TV is set to `Image+`. Without additional changes, the placeholder contains the url to the cropped image.
 
-### Using the ImagePlus Snippet inside getResources/pdoResources Template Chunk
+## Using the ImagePlus Snippet inside getResources/pdoResources Template Chunk
 
 In your template Chunk for *getResources/pdoResources Snippet* call, you need
 to add one parameter so that the *ImagePlus Snippet* call knows the origin ID to
 pull data from:
 
-```
- &docid=`[[+id]]`
+``` php
+&docid=`[[+id]]`
 ```
 
 Here is an example call and configuration, where *image* is your Image+ TV:
 
 **Snippet Call**
-```
+
+``` php
 <div class="blog-articles">
 [[!pdoPage?
     &element=`pdoResources`
@@ -89,7 +77,7 @@ Here is an example call and configuration, where *image* is your Image+ TV:
 
 **Chunk tplBlogPost**
 
-```
+``` html
 <article class="post">
     <header class="post-header">
         <h3 class="post-title mt0 mb1"><a href="[[~[[+id]]]]">[[+longtitle:default=`[[+pagetitle]]`]]</a></h3>
@@ -115,7 +103,7 @@ Here is an example call and configuration, where *image* is your Image+ TV:
 
 **Chunk tplBlogIntroImg**
 
-```
+``` html
 <div class="feature" style="margin-bottom:1rem">
     <a href="[[+caption]]"><img src="[[+source.src:pthumb=`w=320`]]" alt="[[+alt]]" /></a>
 </div>
@@ -123,11 +111,11 @@ Here is an example call and configuration, where *image* is your Image+ TV:
 
 ### Responsive images
 
-If you want to display responsive images with and without the crop, you could
-use the *ImagePlus Snippet*.
+If you want to display responsive images with and without the crop, you could use the *ImagePlus Snippet*.
 
 **Snippet Call**
-```
+
+``` php
 [[ImagePlus? 
 &tvname=`yourtvname` 
 &type=`tpl` 
@@ -136,17 +124,18 @@ use the *ImagePlus Snippet*.
 &pagetitle=`[[*pagetitle]]`
 ]]
 ```
-    
+
 **Chunk tplResponsiveImage**
-```
+
+``` html
 <picture>
     <source media="(min-width: 36em)"
-            srcset="[[+source.src:pthumb=`w=1024`]] 1024w,
-                [[+source.src:pthumb=`w=640`]] 640w,
-                [[+source.src:pthumb=`w=320`]] 320w"
-            sizes="33.3vw"/>
+        srcset="[[+source.src:pthumb=`w=1024`]] 1024w,
+            [[+source.src:pthumb=`w=640`]] 640w,
+            [[+source.src:pthumb=`w=320`]] 320w"
+        sizes="33.3vw"/>
     <source srcset="[[+source.src:pthumb=`[[+crop.options]]&w=640`]] 2x,
-                [[+source.src:pthumb=`[[+crop.options]]&w=320`]] 1x"/>
+        [[+source.src:pthumb=`[[+crop.options]]&w=320`]] 1x"/>
     <img src="[[+url]]" alt="[[+alt:default=`[[+pagetitle]]`]]"/>
 </picture>
 ```
