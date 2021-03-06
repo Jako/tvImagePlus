@@ -110,7 +110,7 @@ url | URL of the thumbnail image
 alt | Alt text
 width | Minimal width of the thumbnail image
 height | Minimal height of the thumbnail image
-source.src | URL of the source image
+source.src | Full path of the source image on the server (not a URL)
 source.width | Width of the source image
 source.height | Height of the source image
 crop.width | Crop width of the thumbnail image
