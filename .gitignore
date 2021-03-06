@@ -3,8 +3,11 @@ config.core.php
 
 _build/site
 
+icon/*.svg
+
 _packages/*.*
 !_packages/.gitignore
 !_packages/*.zip
 
 node_modules/
+core/components/*/vendor/

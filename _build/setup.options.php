@@ -4,14 +4,15 @@
  *
  * @package imageplus
  * @subpackage build
+ *
+ * @var array $options
  */
 
 $output = '<style type="text/css">
     #modx-setupoptions-panel { display: none; }
     #modx-setupoptions-form p { margin-bottom: 10px; }
     #modx-setupoptions-form h2 { margin-bottom: 15px; }
-</style>
-';
+</style>';
 
 $values = array();
 switch ($options[xPDOTransport::PACKAGE_ACTION]) {

@@ -3,7 +3,7 @@
  * ImagePlus Snippet as alternative to Image+ TV Output Type
  *
  * Copyright 2013-2015 by Alan Pich <alan.pich@gmail.com>
- * Copyright 2015-2019 by Thomas Jakobi <thomas.jakobi@partout.info>
+ * Copyright 2015-2021 by Thomas Jakobi <thomas.jakobi@partout.info>
  *
  * @package imageplus
  * @subpackage snippet
@@ -11,7 +11,7 @@
  * @author Alan Pich <alan.pich@gmail.com>
  * @author Thomas Jakobi <thomas.jakobi@partout.info>
  * @copyright Alan Pich 2013-2015
- * @copyright Thomas Jakobi 2015-2019
+ * @copyright Thomas Jakobi 2015-2021
  *
  * @var modX $modx
  * @var array $scriptProperties
@@ -24,7 +24,7 @@ $imageplus = $modx->getService('imageplus', 'ImagePlus', $corePath . 'model/imag
 ));
 
 $tvname = $modx->getOption('tvname', $scriptProperties, '', true);
-$docid = $modx->getOption('docid', $scriptProperties, $modx->resource->get('id'), true);
+$docid = $modx->getOption('docid', $scriptProperties, (isset($modx->resource)) ? $modx->resource->get('id') : 0, true);
 $type = $modx->getOption('type', $scriptProperties, '', true);
 $options = $modx->getOption('options', $scriptProperties, '', true);
 $tpl = $modx->getOption('tpl', $scriptProperties, 'ImagePlus.image', true);

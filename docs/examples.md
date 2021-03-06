@@ -1,6 +1,11 @@
 **Image+* could be used for several purposes. On this page you find some
 *examples how to use it:
 
+### Collections
+
+You could show the *Image+* thumbnail in a Collections grid column by setting
+the column renderer to *ImagePlus.MIGX_Renderer*.
+
 ### MIGX
 
 If you want to use *Image+* in MIGX you could define all *Image+* TV properties
