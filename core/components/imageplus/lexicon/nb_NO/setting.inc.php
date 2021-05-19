@@ -14,6 +14,6 @@ $_lang['setting_imageplus.force_config'] = 'Force predefined crop sizes/aspect r
 $_lang['setting_imageplus.force_config_desc'] = 'Force the usage of predefined crop size/aspect ratios.';
 /** System settings grid */
 $_lang['setting_imageplus.configname'] = 'Navn';
-$_lang['setting_imageplus.target_width'] = 'Target Width';
-$_lang['setting_imageplus.target_height'] = 'Target Height';
+$_lang['setting_imageplus.target_width'] = 'Målbredde';
+$_lang['setting_imageplus.target_height'] = 'Målhøyde';
 $_lang['setting_imageplus.target_ratio'] = 'Target Aspect Ratio';
