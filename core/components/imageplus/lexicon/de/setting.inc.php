@@ -12,8 +12,6 @@ $_lang['setting_imageplus.select_config'] = 'Vordefinierte Ausgabegrößen/Ausga
 $_lang['setting_imageplus.select_config_desc'] = 'Erstellen Sie vordefinierte Ausgabegrößen/Ausgabe-Seitenverhältnisse, welche in den Template Variable Optionen wählbar sind.';
 $_lang['setting_imageplus.force_config'] = 'Erzwungene vordefinierte Ausgabegrößen/Ausgabe-Seitenverältnisse';
 $_lang['setting_imageplus.force_config_desc'] = 'Erzwingen Sie die Verwendung von vordefinierten Ausgabegrößen/Ausgabe-Seitenverhältnissen.';
-/** System settings grid */
-$_lang['setting_imageplus.configname'] = 'Name';
 $_lang['setting_imageplus.target_width'] = 'Ausgabebreite';
 $_lang['setting_imageplus.target_height'] = 'Ausgabehöhe';
 $_lang['setting_imageplus.target_ratio'] = 'Ausgabe-Seitenverhältnis';

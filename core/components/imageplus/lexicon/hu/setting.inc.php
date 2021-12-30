@@ -12,8 +12,6 @@ $_lang['setting_imageplus.select_config'] = 'Előre meghatározott termésméret
 $_lang['setting_imageplus.select_config_desc'] = 'Létrehozhat előre definiált vágási méret/szögarányokat, amelyek a sablonváltozó beállításaiban választhatók.';
 $_lang['setting_imageplus.force_config'] = 'Előre meghatározott méret/arányok kikényszerítése';
 $_lang['setting_imageplus.force_config_desc'] = 'Előre meghatározott méret/szögarányok használatának kikényszerítése.';
-/** System settings grid */
-$_lang['setting_imageplus.configname'] = 'Name';
 $_lang['setting_imageplus.target_width'] = 'Kimeneti szélesség';
 $_lang['setting_imageplus.target_height'] = 'Kimeneti magasság';
 $_lang['setting_imageplus.target_ratio'] = 'Kimeneti képarány';
