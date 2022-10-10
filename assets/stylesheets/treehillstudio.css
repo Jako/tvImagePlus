@@ -188,6 +188,7 @@ html .md-footer-meta .md-footer-logo img {
   --md-primary-fg-color--dark: rgb(99, 106, 22);
   --md-primary-fg-color--light: rgb(203, 216, 65);
   --md-typeset-color: rgb(73, 89, 104);
-  --md-text-font-family: 'Sora'; 
-  --md-code-font-family: 'JetBrains Mono';
+  --md-typeset-a-color: rgb(203, 216, 65);
+  --md-text-font: 'Sora';
+  --md-code-font: 'JetBrains Mono';
 }
