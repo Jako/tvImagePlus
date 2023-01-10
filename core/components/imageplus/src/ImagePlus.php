@@ -293,8 +293,8 @@ class ImagePlus
                         'source' => $source->get('id'),
                         'src' => $json
                     ],
-                    'targetHeight' => (int)$opts['targetHeight'],
-                    'targetWidth' => (int)$opts['targetWidth']
+                    'targetHeight' => (int)($opts['targetHeight'] ?? 0),
+                    'targetWidth' => (int)($opts['targetWidth'] ?? 0)
                 ]);
             }
         }
