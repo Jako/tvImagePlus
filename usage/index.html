@@ -385,8 +385,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-thumb-url-contains-a-culture-key" class="md-nav__link">
-    The Thumb URL contains a culture key
+  <a href="#thumb-url-issues" class="md-nav__link">
+    Thumb URL Issues
   </a>
   
 </li>
@@ -563,8 +563,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-thumb-url-contains-a-culture-key" class="md-nav__link">
-    The Thumb URL contains a culture key
+  <a href="#thumb-url-issues" class="md-nav__link">
+    Thumb URL Issues
   </a>
   
 </li>
@@ -839,9 +839,10 @@ options or if you use the <code>[[+url]]</code> placeholder in the specified out
 Otherwise, the image will not be cropped/truncated and the original image path
 will be returned.</p>
 </div>
-<h4 id="the-thumb-url-contains-a-culture-key">The Thumb URL contains a culture key</h4>
-<p>Please set the system setting <code>phpthumbof.cache_url</code> to <code>/</code>. Otherwise, the
-generated thumbnail path will contain the <code>{base_url}{cultureKey}</code> prefix.</p>
+<h4 id="thumb-url-issues">Thumb URL Issues</h4>
+<p>If you use Image+ in a multiple language site with different base URL context
+settings, you have to set the system setting <code>phpthumbof.cache_url</code> to <code>/</code>.
+Otherwise, the generated thumbnail path will contain the <code>{base_url}</code> prefix.</p>
 <h2 id="snippet">Snippet</h2>
 <p>The snippet gives you a second way to display the TV value. With template
 variable output you are limited to one output chunk per template variable, with
