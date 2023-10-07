@@ -16,7 +16,7 @@
     "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.31",
     "sass": "^1.59.2",
     "uglify-js": "^3.17.4"
   },
