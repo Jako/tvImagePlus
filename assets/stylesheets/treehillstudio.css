@@ -54,9 +54,21 @@
   --tw-gradient-to: #5b7486;
 }
 
-.header .md-header {
-  background: none;
-  position: initial;
+.ths-header__above {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #171b23;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(23, 27, 35, 0));
+  --tw-gradient-to: #5b7486;
+}
+
+.md-header {
+  background-color: var(--md-footer-bg-color);
+  color: var(--md-footer-fg-color);
+}
+
+.md-top:focus, .md-top:hover {
+  background-color: var(--md-footer-bg-color);
+  color: var(--md-footer-fg-color);
 }
 
 .ths-header {
