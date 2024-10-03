@@ -22,6 +22,7 @@ If you specify only a value for **Target Height** or **Target Width** and leave
 aspect ratio.
 
 !!! note "How to calculate the aspect ratio"
+
     The aspect ratio contains a floating point value: this value can be easily
     determined by dividing any width with the desired aspect ratio by the
     corresponding height. For example, suppose you want all your crops to have the
@@ -141,6 +142,7 @@ If you create the thumbnail in the output chunk, i.e. through a pthumb output
 filter, you can disable the generation of the internal thumb URL.
 
 !!! caution "Caution"
+
     You must enable this option if you do not specify an output chunk in the output
     options or if you use the `[[+url]]` placeholder in the specified output chunk.
     Otherwise, the image will not be cropped/truncated and the original image path
