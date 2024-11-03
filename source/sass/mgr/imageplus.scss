@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $treehillstudio-color: #cbd842;
 
 #modx-input-props, #modx-widget-props {
@@ -150,10 +152,10 @@ $treehillstudio-color: #cbd842;
 
 .treehillstudio_window {
   a {
-    color: darken($treehillstudio-color, 10);
+    color: color.adjust($treehillstudio-color, $lightness: -10%);
     text-decoration: none;
     &:hover {
-      color: darken($treehillstudio-color, 25);
+      color: color.adjust($treehillstudio-color, $lightness: -25%);
     }
   }
 }
