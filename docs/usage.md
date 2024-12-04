@@ -171,7 +171,7 @@ following properties can be set in the snippet call:
 
 #### Example
 
-```
+```html
 [[ImagePlus?
 &tvname=`imageplus`
 &docid=`1`

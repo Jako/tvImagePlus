@@ -12,15 +12,15 @@ If you want to use *Image+* in MIGX, you can configure all *Image+* TV
 properties with a JSON string in the *Configs* textarea in the MIGX formtabs
 field. The following properties are possible:
 
-```
+```json
 {
-"targetWidth":"",
-"targetHeight":"",
-"targetRatio":"",
-"thumbnailWidth":"",
-"allowAltTag":"",
-"allowCaption":"",
-"allowCredits":""
+    "targetWidth":"",
+    "targetHeight":"",
+    "targetRatio":"",
+    "thumbnailWidth":"",
+    "allowAltTag":"",
+    "allowCaption":"",
+    "allowCredits":""
 }
 ```
 
@@ -33,9 +33,9 @@ configuration to do this.
 To use this *Image+* MIGX field in the frontend, call the *ImagePlus Snippet*
 where the value parameter is the name of the MIGX field:
 
-```
+```html
 [[ImagePlus? 
-  &value=`[[+migxImagePlusField]]`
+&value=`[[+migxImagePlusField]]`
 ]]
 ```
 
@@ -48,7 +48,7 @@ In order for the TV to be parsed using the *getResources/pdoResources snippet*,
 you need to add the following lines to your *getResources/pdoResources* call
 Snippet* call:
 
-```
+```html
 &includeTVs=`name_of_your_tv`
 &processTVs=`name_of_your_tv`
 ```
@@ -64,8 +64,8 @@ In your template chunk for calling *getResources/pdoResources Snippet*, you need
 to add a parameter so that the *ImagePlus Snippet* call knows the origin ID from
 which to retrieve data:
 
-```
- &docid=`[[+id]]`
+```html
+&docid=`[[+id]]`
 ```
 
 Here is an example of a call and configuration, where *image* is your Image+ TV:
@@ -89,7 +89,7 @@ Here is an example of a call and configuration, where *image* is your Image+ TV:
 
 **Chunk tplBlogPost**
 
-```
+```html
 <article class="post">
     <header class="post-header">
         <h3 class="post-title mt0 mb1"><a href="[[~[[+id]]]]">[[+longtitle:default=`[[+pagetitle]]`]]</a></h3>
@@ -115,7 +115,7 @@ Here is an example of a call and configuration, where *image* is your Image+ TV:
 
 **Chunk tplBlogIntroImg**
 
-```
+```html
 <div class="feature" style="margin-bottom:1rem">
     <a href="[[+caption]]"><img src="[[+source.src:pthumb=`w=320`]]" alt="[[+alt]]" /></a>
 </div>
